@@ -1,0 +1,127 @@
+/* Estilos compartilhados pelas cinco páginas */
+:root {
+    --fundo: #f3f7f8;
+    --texto: #202c35;
+    --principal: #123b50;
+    --secundaria: #187c80;
+    --destaque: #e4f2f0;
+    --borda: #cbd9dd;
+    --branco: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    color: var(--texto);
+    background: var(--fundo);
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    padding: 14px 18px;
+    background: var(--principal);
+    box-shadow: 0 3px 10px #00000018;
+}
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 9px 13px;
+    border-radius: 7px;
+    transition: background .2s ease;
+}
+nav a:hover, nav a:focus { background: var(--secundaria); outline-offset: 3px; }
+main { width: min(1050px, 92%); margin: 34px auto; }
+section > h2 {
+    margin: 0 0 22px;
+    color: var(--principal);
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    line-height: 1.2;
+}
+.destaque-inicio {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.9fr) 1.2fr;
+    align-items: center;
+    gap: 25px;
+    padding: 22px;
+    margin-bottom: 28px;
+    background: var(--destaque);
+    border: 1px solid #c5e0dc;
+    border-radius: 14px;
+}
+.destaque-inicio img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #dce8eb;
+}
+.texto-destaque h3 { margin-top: 0; color: var(--principal); font-size: 1.4rem; }
+.texto-destaque p:last-child { margin-bottom: 0; }
+.acordeao {
+    margin: 13px 0;
+    overflow: hidden;
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #102f3b08;
+}
+.titulo-acordeao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 17px 20px;
+    border: 0;
+    color: var(--principal);
+    background: var(--branco);
+    font: inherit;
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
+.titulo-acordeao:hover, .titulo-acordeao:focus { background: #edf6f5; }
+.titulo-acordeao span { color: var(--secundaria); font-size: 1.5rem; line-height: 1; }
+.conteudo-acordeao { display: none; padding: 2px 20px 18px; border-top: 1px solid #e7eeee; }
+.acordeao.ativo .conteudo-acordeao { display: block; }
+.acordeao.ativo .titulo-acordeao { background: #edf6f5; }
+.tabela-responsiva { overflow-x: auto; margin: 22px 0; background: white; border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; min-width: 650px; }
+th, td { padding: 13px 15px; border: 1px solid var(--borda); text-align: left; vertical-align: top; }
+th { color: white; background: var(--principal); }
+tbody tr:nth-child(even) { background: #edf4f5; }
+.nota { padding: 15px 18px; background: #fff8e8; border-left: 5px solid #d9a441; border-radius: 6px; }
+.linha-do-tempo { border-left: 4px solid var(--secundaria); margin: 25px 0 30px 12px; padding-left: 24px; }
+.evento { position: relative; margin: 0 0 23px; padding: 15px 18px; background: white; border: 1px solid var(--borda); border-radius: 8px; }
+.evento::before { content: ""; position: absolute; width: 14px; height: 14px; border-radius: 50%; background: var(--secundaria); left: -33px; top: 21px; border: 3px solid var(--fundo); }
+.evento strong { color: var(--principal); }
+.evento p { margin-bottom: 0; }
+.calculadora { margin: 20px 0 5px; padding: 18px; background: #f2f7f8; border-radius: 9px; }
+.calculadora h3 { margin-top: 0; color: var(--principal); }
+.calculadora label { display: block; margin: 10px 0 4px; font-weight: 700; }
+.calculadora input { width: 100%; max-width: 260px; padding: 10px; border: 1px solid #9fb4bb; border-radius: 6px; font: inherit; }
+.botao { display: inline-block; margin-top: 13px; padding: 11px 17px; color: white; background: var(--secundaria); border: 0; border-radius: 7px; font: inherit; font-weight: 700; cursor: pointer; }
+.botao:hover, .botao:focus { background: var(--principal); }
+.quiz { margin-top: 30px; padding: 22px; background: white; border: 1px solid var(--borda); border-radius: 12px; }
+.quiz h3 { margin-top: 0; color: var(--principal); font-size: 1.5rem; }
+.quiz fieldset { margin: 18px 0; padding: 14px 16px; border: 1px solid var(--borda); border-radius: 8px; }
+.quiz legend { padding: 0 6px; font-weight: 700; }
+.quiz label { display: block; padding: 4px 0; cursor: pointer; }
+#resultado-quiz { font-weight: 700; }
+footer { margin-top: 45px; padding: 23px 15px; color: white; text-align: center; background: var(--principal); }
+footer p { margin: 4px 0; }
+@media (max-width: 700px) {
+    nav { align-items: stretch; }
+    nav a { width: 100%; text-align: center; }
+    main { width: min(100% - 24px, 1050px); margin: 24px auto; }
+    .destaque-inicio { grid-template-columns: 1fr; padding: 15px; gap: 15px; }
+    .destaque-inicio img { max-height: 220px; }
+    .titulo-acordeao { padding: 15px; }
+    .conteudo-acordeao { padding: 2px 15px 15px; }
+}

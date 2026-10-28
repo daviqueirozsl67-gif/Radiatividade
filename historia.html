@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História e Conceitos | Radioatividade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="tipos_radiacao.html">Tipos de Radiação</a>
+        <a href="historia.html">História e Conceitos</a>
+        <a href="aplicacoes_riscos.html">Aplicações e Riscos</a>
+        <a href="brasil_seguranca.html">Brasil e Segurança</a>
+    </nav>
+    <main>
+        <section>
+            <h2>História e Conceitos</h2>
+            <div class="destaque-inicio">
+                <img src="imagens/historia.svg" alt="Ilustração de laboratório científico antigo">
+                <div class="texto-destaque">
+                    <h3>Descobertas que mudaram a ciência</h3>
+                    <p>No fim do século XIX, experimentos com raios e materiais radioativos abriram caminho para novas áreas da Física, da Química e da Medicina.</p>
+                </div>
+            </div>
+
+            <div class="linha-do-tempo">
+                <div class="evento"><strong>1895 — Wilhelm Röntgen</strong><p>Descobriu os raios X, capazes de atravessar certos materiais e formar imagens do interior do corpo.</p></div>
+                <div class="evento"><strong>1896 — Henri Becquerel</strong><p>Observou que sais de urânio emitiam radiação capaz de marcar chapas fotográficas mesmo sem exposição à luz solar.</p></div>
+                <div class="evento"><strong>1898 — Marie e Pierre Curie</strong><p>Realizaram pesquisas fundamentais sobre a radioatividade e identificaram os elementos polônio e rádio.</p></div>
+            </div>
+
+            <article class="acordeao">
+                <button class="titulo-acordeao">O que é meia-vida? <span>+</span></button>
+                <div class="conteudo-acordeao">
+                    <p>Meia-vida é o tempo necessário para que metade dos núcleos radioativos de uma amostra se desintegre. Depois de uma meia-vida, resta aproximadamente metade da quantidade inicial; depois de duas, um quarto; depois de três, um oitavo.</p>
+                    <p>A meia-vida é característica de cada isótopo radioativo e não significa que todo o material desaparece ao fim desse período.</p>
+                    <div class="calculadora">
+                        <h3>Simulador de meia-vida</h3>
+                        <label for="massa-inicial">Quantidade inicial (g)</label>
+                        <input id="massa-inicial" type="number" min="0" step="any" value="80">
+                        <label for="meias-vidas">Número de meias-vidas</label>
+                        <input id="meias-vidas" type="number" min="0" max="100" step="1" value="2">
+                        <button id="calcular-meia-vida" class="botao">Calcular quantidade restante</button>
+                        <p id="resultado-meia-vida" aria-live="polite">Após 2 meias-vidas, restam 20 g.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="acordeao">
+                <button class="titulo-acordeao">Glossário essencial <span>+</span></button>
+                <div class="conteudo-acordeao">
+                    <p><strong>Decaimento nuclear:</strong> transformação espontânea de um núcleo instável, acompanhada pela emissão de radiação.</p>
+                    <p><strong>Isótopos:</strong> átomos do mesmo elemento químico que possuem o mesmo número de prótons, mas diferentes números de nêutrons.</p>
+                    <p><strong>Atividade radioativa:</strong> número de desintegrações nucleares por unidade de tempo, medido em becquerel (Bq).</p>
+                    <p><strong>Carbono-14:</strong> isótopo radioativo usado para estimar a idade de materiais orgânicos antigos.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto Educativo: Radioatividade</p>
+        <p>Trabalho escolar de Ciências da Natureza</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

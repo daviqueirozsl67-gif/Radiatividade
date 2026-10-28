@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil e Segurança | Radioatividade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="tipos_radiacao.html">Tipos de Radiação</a>
+        <a href="historia.html">História e Conceitos</a>
+        <a href="aplicacoes_riscos.html">Aplicações e Riscos</a>
+        <a href="brasil_seguranca.html">Brasil e Segurança</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Radioatividade no Brasil e Radioproteção</h2>
+            <div class="destaque-inicio">
+                <img src="imagens/brasil.svg" alt="Ilustração de energia nuclear e segurança">
+                <div class="texto-destaque">
+                    <h3>Conhecimento, prevenção e responsabilidade</h3>
+                    <p>O Brasil utiliza tecnologia nuclear em áreas como geração de energia, medicina, indústria e pesquisa. A segurança depende de profissionais capacitados, fiscalização e procedimentos adequados.</p>
+                </div>
+            </div>
+
+            <article class="acordeao">
+                <button class="titulo-acordeao">O acidente com césio-137 em Goiânia <span>+</span></button>
+                <div class="conteudo-acordeao">
+                    <p>Em 1987, em Goiânia (GO), uma fonte de césio-137 retirada de um aparelho de radioterapia abandonado foi aberta e o material radioativo se espalhou. O pó azul brilhante chamou a atenção de pessoas que não sabiam do perigo.</p>
+                    <p>O acidente provocou mortes, contaminação e grande impacto social. Ele evidencia a importância de controlar fontes radioativas, manter equipamentos fora de uso sob supervisão e informar a população.</p>
+                    <p><strong>Em caso de suspeita:</strong> não toque, não abra nem transporte objetos desconhecidos que possam conter material radioativo. Afaste-se e comunique os serviços de emergência ou as autoridades competentes.</p>
+                </div>
+            </article>
+            <article class="acordeao">
+                <button class="titulo-acordeao">Usinas nucleares de Angra <span>+</span></button>
+                <div class="conteudo-acordeao">
+                    <p>A Central Nuclear Almirante Álvaro Alberto fica em Angra dos Reis, no Rio de Janeiro. Angra 1 e Angra 2 são usinas em operação; Angra 3 é um projeto cuja situação deve ser consultada em fontes oficiais atualizadas.</p>
+                    <p>Em uma usina, a energia liberada pela fissão aquece água. O vapor movimenta turbinas ligadas a geradores elétricos. A operação exige sistemas de segurança, controle e gestão de rejeitos.</p>
+                </div>
+            </article>
+            <article class="acordeao">
+                <button class="titulo-acordeao">Os três princípios da radioproteção <span>+</span></button>
+                <div class="conteudo-acordeao">
+                    <p><strong>Tempo:</strong> reduzir o tempo perto de uma fonte diminui a dose recebida.</p>
+                    <p><strong>Distância:</strong> aumentar a distância da fonte geralmente reduz a exposição.</p>
+                    <p><strong>Blindagem:</strong> usar barreiras apropriadas, selecionadas de acordo com o tipo e a energia da radiação.</p>
+                    <p>Em serviços de radiologia, equipamentos, protocolos, dosímetros e profissionais habilitados ajudam a manter a exposição tão baixa quanto razoavelmente possível, sem comprometer a finalidade do procedimento.</p>
+                </div>
+            </article>
+
+            <section class="quiz">
+                <h3>Quiz: teste seus conhecimentos</h3>
+                <p>Escolha uma resposta para cada pergunta e confira seu resultado.</p>
+                <form id="quiz-radioatividade">
+                    <fieldset>
+                        <legend>1. Qual unidade mede a atividade radioativa?</legend>
+                        <label><input type="radio" name="q1" value="a"> Gray (Gy)</label>
+                        <label><input type="radio" name="q1" value="b"> Becquerel (Bq)</label>
+                        <label><input type="radio" name="q1" value="c"> Metro (m)</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. Qual emissão tem, em geral, menor poder de penetração?</legend>
+                        <label><input type="radio" name="q2" value="a"> Alfa</label>
+                        <label><input type="radio" name="q2" value="b"> Gama</label>
+                        <label><input type="radio" name="q2" value="c"> Raios X</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3. Quais são os três princípios básicos de radioproteção?</legend>
+                        <label><input type="radio" name="q3" value="a"> Calor, luz e som</label>
+                        <label><input type="radio" name="q3" value="b"> Massa, volume e densidade</label>
+                        <label><input type="radio" name="q3" value="c"> Tempo, distância e blindagem</label>
+                    </fieldset>
+                    <button type="submit" class="botao">Ver resultado</button>
+                    <p id="resultado-quiz" aria-live="polite"></p>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto Educativo: Radioatividade</p>
+        <p>Trabalho escolar de Ciências da Natureza</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
